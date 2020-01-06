@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="这里是一段很长很长很长很长很长很长的标题"
+            android:textSize="18sp"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="3.5dp"
+            android:text="发布时间： 2019-09-25 | 作者：张三 "
+            android:textSize="11sp"
+            android:textColor="@color/color_999999"/>
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginTop="21.5dp"
+            android:text="早在100万年前，
+                                早在100万年前，蓝田古人类就在这里建造了聚落；7000年前仰韶文化时期，这里已经出现了城垣的雏形；2008年，西安高陵杨官寨出土距今6000余年的新石器时代晚期城市遗迹，被选为当年中国考古发现之首，这是中国发现的迄今最早的城市遗址，也将西安地区城市历史推进到6000多年前的新石器时代晚期。
+
+远古时代，“蓝田猿人”就在这里繁衍生息；新石器“半坡先民”在此建立早在100万年前，
+                                早在100万年前，蓝田古人类就在这里建造了聚落；7000年前仰韶文化时期，这里已经出现了城垣的雏形；2008年，西安高陵杨官寨出土距今6000余年的新石器时代晚期城市遗迹，被选为当年中国考古发现之首，这是中国发现的迄今最早的城市遗址，也将西安地区城市历史推进到6000多年前的新石器时代晚期。
+
+远古时代，“蓝田猿人”就在这里繁衍生息；新石器“半坡先民”在此建立部早在100万年前，
+                                早在100万年前，蓝田古人类就在这里建造了聚落；7000年前仰韶文化时期，这里已经出现了城垣的雏形；2008年，西安高陵杨官寨出土距今6000余年的新石器时代晚期城市遗迹，被选为当年中国考古发现之首，这是中国发现的迄今最早的城市遗址，也将西安地区城市历史推进到6000多年前的新石器时代晚期。
+
+远古时代，“蓝田猿人”就在这里繁衍生息；新石器“半坡先民”在此建立部早在100万年前，
+                                早在100万年前，蓝田古人类就在这里建造了聚落；7000年前仰韶文化时期，这里已经出现了城垣的雏形；2008年，西安高陵杨官寨出土距今6000余年的新石器时代晚期城市遗迹，被选为当年中国考古发现之首，这是中国发现的迄今最早的城市遗址，也将西安地区城市历史推进到6000多年前的新石器时代晚期。
+
+远古时代，“蓝田猿人”就在这里繁衍生息；新石器“半坡先民”在此建立部部落，半坡人的经济生活中，农业生产占有很重要的地位，他们焚毁树木，开垦农田，种植粟等旱地作物。当时人们从事生产活动所使用的工具是石头、兽骨、鹿角和陶片等制造的。除粮食生产外，半坡人也已开始种植蔬菜。家畜饲养业在当时已出现了，当时养的牲畜有猪和狗两种，以猪为主。打猎、捕鱼也是当时一项重要的生产活动。靠创新，创新要靠人才”的理念，加快新时代创新人才队伍建设，着力培育引进一大批具有国际水平的战略科技人才、科技领军人才、青年科技人才和高水平创新团队，为高质量发展提供强有力的人才支撑。汉长安城位于渭河以南的关中平原上，面积约36平方公里。在西汉时期，作为首都的长安城一直是全国的政治、经济和文化中心，也是中国历史上第一座规模庞大、居民众多的城市。汉长安是在秦咸阳遗址基础上建立起来的，《史记》：“汉长安，秦咸阳也”，张衡《西京赋》云：西汉长安“乃览秦制，跨周法”，《三辅黄图·序》也云：“武昭，治咸阳，因以汉都”。《旧唐书 地理志》说：“京师，故秦之咸阳，汉之长安也。”秦咸阳从惠文王以后，就不断向南扩展，在渭河以南修建了章台、兴乐宫、甘泉宫、信宫、阿房宫及七庙等建筑。刘邦夺得天下后，经娄敬、张良等的劝说，建都长安。修缮秦的兴乐宫而改为长乐宫，在秦章台基础上建未央宫。即汉长安城是在秦都咸阳基础上建立的，说明在都城选址上是汉承秦制的。 汉朝宫阙均在今西安市汉城保护区内，位于北二环以北，而汉代的武帝文帝景帝陵墓，在今咸阳市境内。丝绸之路开通后，长安成为东方文明的中心，史称“西有罗马，东有长安”。
+                            蓝田古人类就在这里建造了聚落；7000年前仰韶文化时期，这里已经出现了城垣的雏形；2008年，西安高陵杨官寨"
+            android:textSize="12dp"
+            android:textColor="@color/color_666666"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

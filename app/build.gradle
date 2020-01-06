@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.dan.yousuanshi"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+//        debug {
+//            storeFile file("yousuanshi.jks")
+//            storePassword "dongzhouruanjian"
+//            keyAlias "yousuanshi"
+//            keyPassword "dongzhouruanjian"
+//        }
+
+        release {
+            storeFile file("yousuanshi.jks")
+            storePassword "dongzhouruanjian"
+            keyAlias "yousuanshi"
+            keyPassword "dongzhouruanjian"
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            jniDebuggable true
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //加上以下两句
+            debuggable true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'//注入框架
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'//注入框架
+    implementation 'com.github.goweii:AnyDialog:3.0.3'
+    implementation 'com.google.code.gson:gson:2.8.5'//json转换
+    api 'com.github.goweii:RxHttp:2.2.9'//网络请求
+    implementation 'com.makeramen:roundedimageview:2.2.1'//圆形头像
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-beta05'//列表
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'//tab
+    implementation 'com.yinglan.alphatabs:library:1.0.8'//仿微信底部导航栏
+    implementation "org.java-websocket:Java-WebSocket:1.4.0"//socket
+    implementation 'org.greenrobot:eventbus:3.1.1'//eventbus异步框架
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    implementation 'com.leon:lfilepickerlibrary:1.8.0'
+    implementation 'com.qiniu:qiniu-android-sdk:7.4.2'
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'//请求权限
+    implementation 'io.reactivex:rxjava:1.1.3'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'//gif播放imageview
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.4' //图片选择器
+    implementation group: 'com.belerweb', name: 'pinyin4j', version: '2.5.0'//汉字转拼音
+    implementation 'com.github.yuzhiqiang1993:zxing:2.2.8'//扫一扫
+    implementation('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.6') {
+        exclude group: 'com.android.support'
+    }//日期选择器
+    implementation "me.leolin:ShortcutBadger:1.1.22@aar"//app角标
+    compile project(path: ':videocompressors') //视频压缩器
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0' //下拉刷新上拉加载
+    implementation 'com.github.pinguo-zhouwei:MZBannerView:v2.0.0' //banner
+}

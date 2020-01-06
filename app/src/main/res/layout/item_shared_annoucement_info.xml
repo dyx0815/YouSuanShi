@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24.5dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="19dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国庆放假通知"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-10-01 10:30"
+            android:textColor="@color/color_999999"
+            android:textSize="11sp"
+            android:layout_toLeftOf="@id/tv_name"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginRight="12dp"
+            android:text="东舟软件发布"
+            android:textColor="@color/color_999999"
+            android:textSize="11sp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.5dp"
+            android:ellipsize="end"
+            android:maxEms="21"
+            android:maxLines="1"
+            android:text="陕西东舟软件开发有限责任公司于今日开始放国庆假期"
+            android:textColor="@color/color_999999"
+            android:textSize="12dp"
+            android:layout_below="@id/tv_title"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dan.yousuanshi">
+    <!-- 允许程序和网络交互 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序读权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 允许程序写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许程序录音网络状态 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序打开摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于本地定位 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 读通讯录 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_logo_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".module.shared.activity.TemplateManagerActivity"></activity>
+        <activity android:name=".module.shared.activity.SortModelActivity" />
+        <activity android:name=".module.shared.activity.AddModelActivity" />
+        <activity android:name=".module.shared.activity.UpdateModelNameActivity" />
+        <activity android:name=".module.shared.activity.SwitchCompanyActivity" />
+        <activity android:name=".module.shared.activity.UpdateAnnouncementActivity" />
+        <activity android:name=".module.shared.activity.AnnouncementInfoActivity" />
+        <activity android:name=".module.shared.activity.SettingWorkBenchIsLookActivity" />
+        <activity android:name=".module.shared.activity.WorkBenchManagerActivity" />
+        <activity android:name=".module.shared.activity.AnnouncementActivity" />
+        <activity android:name=".module.shared.activity.SearchModelActivity" />
+        <activity android:name=".module.shared.activity.SharedTeamPeopleActivity" />
+        <activity android:name=".module.shared.activity.NewModelActivity" />
+        <activity android:name=".module.shared.activity.AddWorkBenchActivity" />
+        <activity android:name=".module.addressbook.activity.PartPurviewActivity" />
+        <activity android:name=".module.addressbook.activity.SettingSonAdmin2Activity" />
+        <activity android:name=".module.addressbook.activity.SettingSonAdminActivity" />
+        <activity android:name=".module.chat.activity.UpdateGroupFileActivity" />
+        <activity android:name=".module.mine.activity.CollectInfoActivity" />
+        <activity android:name=".module.mine.activity.MyCollectActivity" />
+        <activity android:name=".module.chat.activity.SharedDepartmentPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.TeamQrCodeActivity" />
+        <activity android:name=".module.chat.activity.InviteJoinTeamActivity" />
+        <activity android:name=".module.addressbook.activity.UpdateAdmin2Activity" />
+        <activity android:name=".module.addressbook.activity.AllTeamPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.UpdateAdminActivity" />
+        <activity android:name=".module.addressbook.activity.AddApplicationSettingActivity" />
+        <activity android:name=".module.addressbook.activity.SettingApplicationActivity" />
+        <activity android:name=".module.addressbook.activity.DiyApplicationSettingActivity" />
+        <activity android:name=".module.addressbook.activity.ApplicationSettingActivity" />
+        <activity android:name=".module.addressbook.activity.EditTeamPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.OperateTeamPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.SearchTeamPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.TeamPeopleManagerActivity" />
+        <activity android:name=".module.addressbook.activity.ChooseDepartmentActivity" />
+        <activity android:name=".module.addressbook.activity.ChooseTeamPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.DepartmentSettingActivity" />
+        <activity android:name=".module.addressbook.activity.DepartmentPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.TeamPeopleActivity" />
+        <activity android:name=".module.chat.activity.ReserveMeetingInfoActivity" />
+        <activity android:name=".module.chat.activity.GroupAdminActivity" />
+        <activity android:name=".module.chat.activity.GroupMasterActivity" />
+        <activity android:name=".module.chat.activity.GroupPeopleActivity" />
+        <activity android:name=".module.chat.activity.FaceCreateGroupActivity" />
+        <activity android:name=".module.chat.activity.TransferActivity" />
+        <activity android:name=".module.chat.activity.ChooseGroupPeopleActivity" />
+        <activity android:name=".module.chat.activity.GroupFileActivity" />
+        <activity android:name=".module.chat.activity.GroupPictureActivity" />
+        <activity android:name=".module.chat.activity.InputGroupAmActivity" />
+        <activity android:name=".module.chat.activity.GroupAnnouncementActivity" />
+        <activity android:name=".module.chat.activity.GroupChatSetActivity" />
+        <activity android:name=".module.chat.activity.SearchChatRecordActivity" />
+        <activity android:name=".module.addressbook.activity.ApplyInfoActivity" />
+        <activity android:name=".module.addressbook.activity.UpdateTeamNameActivity" />
+        <activity android:name=".module.addressbook.activity.DiyManagerActivity" />
+        <activity android:name=".module.addressbook.activity.AdminSettingActivity" />
+        <activity android:name=".module.addressbook.activity.AddPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.AddDepartmentActivity" />
+        <activity android:name=".module.mine.activity.NotDisturbActivity" />
+        <activity android:name=".module.mine.activity.AboutMeActivity" />
+        <activity android:name=".module.mine.activity.ClearActivity" />
+        <activity android:name=".module.mine.activity.ManyLanguageActivity" />
+        <activity android:name=".module.mine.activity.CommonActivity" />
+        <activity android:name=".module.mine.activity.BlackListActivity" />
+        <activity android:name=".module.mine.activity.PrivacyActivity" />
+        <activity android:name=".module.mine.activity.UpdatePasswordActivity" />
+        <activity android:name=".module.addressbook.activity.DepartmentManagerActivity" />
+        <activity android:name=".module.addressbook.activity.TeamAddressBookActivity" />
+        <activity android:name=".module.addressbook.activity.TeamAddressBookManagerActivity" />
+        <activity android:name=".module.addressbook.activity.TeamManagerActivity" />
+        <activity android:name=".module.addressbook.activity.MyApplyRecordActivity" />
+        <activity android:name=".module.addressbook.activity.TeamNewPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.OtherTeamInfoActivity" />
+        <activity android:name=".module.addressbook.activity.OtherTeamActivity" />
+        <activity android:name=".module.addressbook.activity.TeamHomeActivity" />
+        <activity android:name=".module.login.activity.WriteDataActivity" />
+        <activity android:name=".module.chat.activity.ChoosePeopleActivity" />
+        <activity android:name=".module.chat.activity.SetGroupInfoActivity" />
+        <activity android:name=".module.addressbook.activity.TeamStructureActivity" />
+        <activity android:name=".module.chat.activity.ChooseActivity" />
+        <activity android:name=".module.chat.activity.SearchPeopleActivity" />
+        <activity android:name=".module.addressbook.activity.UpdateRemarkActivity" />
+        <activity android:name=".module.chat.activity.SharedDepartmentActivity" />
+        <activity android:name=".module.chat.activity.SharedMyFriendActivity" />
+        <activity android:name=".module.chat.activity.SearchMyTeamActivity" />
+        <activity android:name=".module.chat.activity.SharedBusinessCardActivity" />
+        <activity android:name=".module.mine.activity.SettingFirstTeamActivity" />
+        <activity android:name=".module.mine.activity.ExitMyTeamActivity" />
+        <activity android:name=".module.chat.activity.ReserveMeetingActivity" />
+        <activity android:name=".module.chat.activity.MyQRCodeActivity" />
+        <activity android:name=".module.mine.activity.SettingActivity" />
+        <activity android:name=".module.mine.activity.FeedbackActivity" />
+        <activity android:name=".module.chat.activity.MyLocationActivity" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b3584d5db73da494162471c6f3482f18" />
+
+        <activity android:name=".module.addressbook.activity.AddFriendVerificationActivity" />
+        <activity android:name=".module.addressbook.activity.FriendInfoActivity" />
+        <activity android:name=".module.addressbook.activity.SearchFriendByPhoneActivity" />
+        <activity
+            android:name=".module.addressbook.activity.ApplyJoinTeamActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".module.addressbook.activity.SearchTeamActivity" />
+        <activity android:name=".module.addressbook.activity.AddTeamActivity" />
+        <activity android:name=".module.addressbook.activity.ChooseMyFriendActivity" />
+        <activity android:name=".module.mine.activity.SetFirstTeamActivity" />
+        <activity android:name=".module.mine.activity.MyTeamActivity" />
+        <activity android:name=".module.mine.activity.UpdateUserPhoneNumberActivity" />
+        <activity android:name=".module.mine.activity.UpdateUserCodeActivity" />
+        <activity android:name=".module.mine.activity.UpdateUserPhoneActivity" />
+        <activity android:name=".module.mine.activity.UpdateUserInfoActivity" />
+        <activity android:name=".module.addressbook.activity.SearchMyFriendActivity" />
+        <activity android:name=".module.addressbook.activity.ChooseAreaActivity" />
+        <activity android:name=".module.mine.activity.MyInfoActivity" />
+        <activity android:name=".module.addressbook.activity.MyFriendActivity" />
+        <activity android:name=".module.addressbook.activity.MyGroupActivity" />
+        <activity android:name=".module.addressbook.activity.NewFriendActivity" />
+        <activity android:name=".module.addressbook.activity.ChooseCityActivity" />
+        <activity android:name=".module.addressbook.activity.ChooseCountryActivity" />
+        <activity android:name=".module.addressbook.activity.ChoosePeopleSizeActivity" />
+        <activity android:name=".module.addressbook.activity.SearchIndustryActivity" />
+        <activity android:name=".module.addressbook.activity.ChooseIndustryActivity" />
+        <activity android:name=".module.addressbook.activity.CreateTeamActivity" />
+        <activity android:name=".module.addressbook.activity.AddFriendActivity" /> <!-- 高德 -->
+        <activity android:name=".module.chat.activity.MyFileActivity" />
+        <activity android:name=".module.chat.activity.ChatSetActivity" />
+        <activity
+            android:name=".module.chat.activity.ChatActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".module.chat.activity.ChooseMyCompanyActivity" />
+        <activity android:name=".module.chat.activity.ChooseGroupActivity" />
+        <activity android:name=".module.chat.activity.SearchActivity" />
+        <activity android:name=".module.login.activity.SetPasswordActivity" />
+        <activity android:name=".module.login.activity.RegisterCodeActivity" />
+        <activity android:name=".module.login.activity.RegisterActivity" />
+        <activity android:name=".module.login.activity.LoginActivity" />
+        <activity
+            android:name=".module.main.activity.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.main.activity.MainActivity"
+            android:launchMode="singleTask" />
+
+        <service android:name=".module.chat.service.ChatSocketService" />
+        <service android:name="com.amap.api.location.APSService" />
+    </application>
+
+</manifest>

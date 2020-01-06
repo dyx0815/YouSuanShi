@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.addressbook.activity.ApplyInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingTop="14dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清空"
+                android:textSize="14sp"
+                android:textColor="@color/color_333333"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_D5D5D5"
+            android:layout_below="@id/ll_back"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_F8F8F8"/>
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="9.5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center_vertical">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_head_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/ez"
+            android:scaleType="fitXY"
+            app:riv_oval="true"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="张三丰"
+            android:textSize="15sp"
+            android:textColor="@color/color_333333"/>
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:src="@mipmap/icon_address_book_create_right"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_F2F2F2"/>
+    <TextView
+        android:id="@+id/tv_team_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="公司名称"
+        android:textSize="13sp"
+        android:textColor="@color/color_999999" />
+    <TextView
+        android:id="@+id/tv_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="9.5dp"
+        android:text="百度（纳斯达克：BIDU），全球最大的中文搜索引擎及最 大的中文网站，全球领先的人工智能公司。百度愿景是成 为最懂用户，并能帮"
+        android:textSize="14sp"
+        android:textColor="@color/color_333333" />
+    <TextView
+        android:id="@+id/tv_apply_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="申请理由"
+        android:textSize="13sp"
+        android:textColor="@color/color_999999" />
+    <TextView
+        android:id="@+id/tv_apply_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="9.5dp"
+        android:text="百度（纳斯达克：BIDU），全球最大的中文搜索引擎及最 大的中文网站，全球领先的人工智能公司。百度愿景是成 为最懂用户，并能帮"
+        android:textSize="14sp"
+        android:textColor="@color/color_333333" />
+    <TextView
+        android:id="@+id/tv_phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14.5dp"
+        android:text="手机号"
+        android:textSize="13sp"
+        android:textColor="@color/color_999999" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="11dp"
+        android:text="13324566171"
+        android:textSize="14sp"
+        android:textColor="@color/color_333333" />
+
+    <TextView
+        android:id="@+id/tv_leave_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14.5dp"
+        android:text="留言"
+        android:textSize="13sp"
+        android:textColor="@color/color_999999" />
+
+    <TextView
+        android:id="@+id/tv_leave_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="9.5dp"
+        android:text="百度（纳斯达克：BIDU），全球最大的中文搜索引擎及最 大的中文网站，全球领先的人工智能公司。百度愿景是成 为最懂用户，并能帮"
+        android:textSize="14sp"
+        android:textColor="@color/color_333333" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="64.5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/white"
+        android:text="已同意"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/selector_clear_btn_bg"
+        android:enabled="false"/>
+</LinearLayout>

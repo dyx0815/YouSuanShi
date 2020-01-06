@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_work_bench_icon"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="6dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ez" />
+
+        <TextView
+            android:id="@+id/tv_work_bench"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_work_bench_icon"
+            android:layout_marginTop="10dp"
+            android:text="考勤打卡"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_isLook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="(全员可见)"
+            android:textColor="@color/color_F99E05"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/v_util"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:layout_toRightOf="@id/ll_info"/>
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/icon_shared_delete_work_bench"
+        android:layout_alignRight="@id/v_util"/>
+</RelativeLayout>

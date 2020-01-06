@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_pinyin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:background="@color/color_F8F8F8">
+        <TextView
+            android:id="@+id/tv_pinyin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textSize="12sp"
+            android:textColor="@color/color_999999"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_choose"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_choose_my_friend"
+            android:button="@null"
+            android:checked="false"
+            android:visibility="gone"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_head_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/ll_pinyin"
+            android:layout_toRightOf="@id/ll_checked"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ez"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/riv_head_icon"
+            android:layout_marginLeft="9.5dp"
+            android:layout_toRightOf="@id/riv_head_icon"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="探险家 伊泽瑞尔"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:paddingLeft="7.5dp"
+            android:paddingRight="7.5dp"
+            android:text="主管理员"
+            android:textSize="10sp"
+            android:textColor="@color/color_F99E05"
+            android:background="@drawable/shape_send_announcement"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="64.5dp"
+        android:background="@color/color_F2F2F2"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:minLevel="0" android:maxLevel="4999" android:drawable="@drawable/icon_voice_level_0"/>
+    <item android:minLevel="5000" android:maxLevel="5499" android:drawable="@drawable/icon_voice_level_1"/>
+    <item android:minLevel="5500" android:maxLevel="5999" android:drawable="@drawable/icon_voice_level_2"/>
+    <item android:minLevel="6000" android:maxLevel="6499" android:drawable="@drawable/icon_voice_level_3"/>
+    <item android:minLevel="6500" android:maxLevel="7999" android:drawable="@drawable/icon_voice_level_4"/>
+    <item android:minLevel="8000" android:maxLevel="8999" android:drawable="@drawable/icon_voice_level_5"/>
+</level-list>

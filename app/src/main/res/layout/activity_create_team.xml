@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.addressbook.activity.CreateTeamActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="14dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="14dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="创建团队"
+                android:textColor="@color/color_333333"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_back"
+                android:background="@color/color_D5D5D5" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_title"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="16dp"
+            android:text="团队名称"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_team_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_team_name"
+            android:layout_marginLeft="11.5dp"
+            android:layout_toRightOf="@id/tv_team_name"
+            android:background="@color/transparent"
+            android:hint="请填写真实名称"
+            android:textSize="14sp"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor"/>
+
+        <View
+            android:id="@+id/v_team_name"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_team_name"
+            android:layout_alignLeft="@id/tv_team_name"
+            android:layout_marginTop="15.5dp"
+            android:background="@color/color_F2F2F2" />
+
+        <LinearLayout
+            android:id="@+id/ll_industry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_team_name"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="行业"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_industry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="未选择"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="11dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_address_book_create_right" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_industry"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@color/color_F2F2F2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_people_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_industry"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人员规模"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_people_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="未选择"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="11dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_address_book_create_right" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_people_size"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@color/color_F2F2F2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_people_size"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地区"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="未选择"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="11dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_address_book_create_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@color/color_F2F2F2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_address"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的职位"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_my_position"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="未选择"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="11dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_address_book_create_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@color/color_F2F2F2" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_util"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_below="@id/ll_my_position"
+            android:background="@color/color_F8F8F8" />
+
+        <LinearLayout
+            android:id="@+id/ll_add_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_util"
+            android:paddingLeft="13dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/icon_create_team_add_admin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.5dp"
+                android:text="添加管理员"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_add_admin"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ll_add_admin"
+            android:background="@color/color_F2F2F2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/admin_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_add_admin" />
+
+        <View
+            android:id="@+id/v_util2"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_below="@id/admin_recyclerView"
+            android:background="@color/color_F8F8F8" />
+
+        <LinearLayout
+            android:id="@+id/ll_add_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_util2"
+            android:paddingLeft="13dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/icon_create_team_add_people" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.5dp"
+                android:text="添加成员"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_add_people"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ll_add_people"
+            android:background="@color/color_F2F2F2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/people_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_add_people" />
+
+        <View
+            android:id="@+id/v_util3"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_below="@id/people_recyclerView"
+            android:background="@color/color_F8F8F8" />
+
+        <View
+            android:id="@+id/v_util4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/v_util3"/>
+
+        <TextView
+            android:id="@+id/tv_create_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42.5dp"
+            android:layout_marginRight="42.5dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="42.5dp"
+            android:background="@drawable/shape_create_team_btn_bg"
+            android:gravity="center"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="立即创建"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/v_util4"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

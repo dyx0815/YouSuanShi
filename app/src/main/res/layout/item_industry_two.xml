@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="16.5dp"
+    android:paddingBottom="16.5dp"
+    android:paddingLeft="20dp"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/tv_industry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="高等教育"
+        android:textSize="13sp"
+        android:textColor="@color/color_333333"
+        android:gravity="center"/>
+    <View
+        android:id="@+id/v_util"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/color_F2F2F2"/>
+</LinearLayout>

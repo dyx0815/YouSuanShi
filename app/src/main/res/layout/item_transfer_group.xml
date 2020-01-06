@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_pinyin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:background="@color/color_F8F8F8">
+        <TextView
+            android:id="@+id/tv_pinyin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textSize="12sp"
+            android:textColor="@color/color_999999"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="24dp"
+        android:layout_marginTop="10dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_head_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/ll_pinyin"
+            android:layout_toRightOf="@id/ll_checked"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ez"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignTop="@id/riv_head_icon"
+            android:layout_marginLeft="9.5dp"
+            android:layout_toRightOf="@id/riv_head_icon"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="探险家 伊泽瑞尔"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/iv_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_transfer_group"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="64.5dp"
+        android:background="@color/color_F2F2F2"/>
+</LinearLayout>

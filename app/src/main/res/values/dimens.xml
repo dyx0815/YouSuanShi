@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+</resources>

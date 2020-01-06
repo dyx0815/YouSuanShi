@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_head_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ez"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/riv_head_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19.5dp"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_industry_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_team_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="35.5dp"
+            android:drawableLeft="@mipmap/icon_team_info_left"
+            android:drawablePadding="6.5dp"
+            android:text="行业"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_industry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_industry_title"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="11dp"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_industry"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20.5dp"
+            android:drawableLeft="@mipmap/icon_team_info_left"
+            android:drawablePadding="6.5dp"
+            android:text="地区"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address_title"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="10.5dp"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@mipmap/icon_team_info_left"
+            android:drawablePadding="6.5dp"
+            android:text="工商信息"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info_title"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="15dp"
+            android:text="注册资金："
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_money_title"
+            android:layout_toRightOf="@id/tv_money_title"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_create_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="12dp"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_create_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info_title"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/tv_create_date"
+            android:text="成立日期："
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_status_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_money_title"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="14.5dp"
+            android:text="经营状态："
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_status_title"
+            android:layout_toRightOf="@id/tv_status_title"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_credit_number_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_status_title"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="14.5dp"
+            android:text="统一社会信用代码："
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_credit_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_credit_number_title"
+            android:layout_toRightOf="@id/tv_credit_number_title"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_create_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_credit_number_title"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="14.5dp"
+            android:text="注册地址："
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_create_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_create_address_title"
+            android:layout_toRightOf="@id/tv_create_address_title"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_manage_scope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_create_address_title"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_marginRight="19.5dp"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

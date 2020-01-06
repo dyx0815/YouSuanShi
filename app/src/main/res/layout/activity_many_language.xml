@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".module.mine.activity.ManyLanguageActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingTop="14dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="多语言"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ll_back"
+            android:background="@color/color_D5D5D5" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_F8F8F8" />
+
+    <TextView
+        android:id="@+id/tv_follow_system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:button="@null"
+        android:checked="true"
+        android:drawableEnd="@mipmap/icon_choose_language"
+        android:paddingLeft="12dp"
+        android:paddingTop="20.5dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="20.5dp"
+        android:text="跟随系统"
+        android:textColor="@color/color_F99E05"
+        android:textSize="14dp" />
+    <TextView
+        android:id="@+id/tv_jian_chinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20.5dp"
+        android:paddingBottom="20.5dp"
+        android:button="@null"
+        android:background="@color/white"
+        android:text="简体中文"
+        android:textSize="14dp"
+        android:textColor="@color/color_333333"
+        android:checked="true"/>
+    <TextView
+        android:id="@+id/tv_fan_chinese_taiwan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20.5dp"
+        android:paddingBottom="20.5dp"
+        android:button="@null"
+        android:background="@color/white"
+        android:text="繁体中文（台湾）"
+        android:textSize="14dp"
+        android:textColor="@color/color_333333"
+        android:checked="true"/>
+    <TextView
+        android:id="@+id/tv_fan_chinese_hongkong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20.5dp"
+        android:paddingBottom="20.5dp"
+        android:button="@null"
+        android:background="@color/white"
+        android:text="繁体中文（香港）"
+        android:textSize="14dp"
+        android:textColor="@color/color_333333"
+        android:checked="true"/>
+    <TextView
+        android:id="@+id/tv_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20.5dp"
+        android:paddingBottom="20.5dp"
+        android:button="@null"
+        android:background="@color/white"
+        android:text="English"
+        android:textSize="14dp"
+        android:textColor="@color/color_333333"
+        android:checked="true"/>
+
+</LinearLayout>

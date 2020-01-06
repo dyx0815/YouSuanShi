@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".module.login.activity.LoginActivity">
+    <!--更多-->
+    <TextView
+        android:id="@+id/tv_al_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/size_12"
+        android:padding="@dimen/size_10"
+        android:text="更多"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_16" />
+
+    <ImageView
+        android:id="@+id/iv_al_logo"
+        android:layout_width="70dp"
+        android:layout_height="73.5dp"
+        android:layout_marginTop="46dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_logo"
+        android:layout_below="@id/tv_al_more"/>
+
+    <!--手机号输入框-->
+    <LinearLayout
+        android:id="@+id/ll_al_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_al_logo"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="58.5dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/shape_login_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+        <ImageView
+            android:id="@+id/iv_al_phone_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="35dp"
+            android:src="@mipmap/icon_phone" />
+
+        <EditText
+            android:id="@+id/et_al_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@color/transparent"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="13sp"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor"
+            android:text="13324566171"/>
+    </LinearLayout>
+
+    <!--密码输入框-->
+    <LinearLayout
+        android:id="@+id/ll_al_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_al_phone"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/shape_login_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="35dp"
+            android:src="@mipmap/icon_pwd" />
+
+        <EditText
+            android:id="@+id/et_al_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textSize="13sp"
+            android:maxLines="18"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor"
+            android:text="123456"/>
+
+        <ImageView
+            android:id="@+id/iv_al_look"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_look"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/iv_al_unlook"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_unlook"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_al_get_code"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="15dp"
+            android:text="获取验证码"
+            android:textSize="10sp"
+            android:textColor="@color/color_F99E05"
+            android:background="@drawable/shape_btn_get_code"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!--登录按钮-->
+    <Button
+        android:id="@+id/btn_al_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_al_pwd"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="55dp"
+        android:background="@mipmap/icon_login_btn_bg"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16" />
+
+    <!--验证码登录-->
+    <TextView
+        android:id="@+id/tv_al_number_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_al_login"
+        android:layout_alignLeft="@id/btn_al_login"
+        android:layout_marginTop="25.5dp"
+        android:text="验证码登录"
+        android:textColor="@color/color_999999"
+        android:textSize="13sp" />
+
+    <!--忘记密码-->
+    <TextView
+        android:id="@+id/tv_al_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_al_login"
+        android:layout_alignTop="@id/tv_al_number_login"
+        android:layout_alignRight="@id/btn_al_login"
+        android:text="忘记密码？"
+        android:textColor="@color/color_999999"
+        android:textSize="13sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/bottom_login"/>
+    </LinearLayout>
+</RelativeLayout>

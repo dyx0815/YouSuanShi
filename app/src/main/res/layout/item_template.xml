@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@mipmap/icon_template_item_bg"
+    android:gravity="center_horizontal"
+    android:paddingTop="14.5dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp">
+    <TextView
+        android:id="@+id/tv_template_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="考勤打卡"
+        android:textSize="14sp"
+        android:textColor="@color/color_333333"/>
+    <TextView
+        android:id="@+id/tv_template_name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="考勤模板"
+        android:textSize="12sp"
+        android:textColor="@color/color_999999"/>
+    <ImageView
+        android:id="@+id/iv_template"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="9.5dp"
+        android:scaleType="fitXY"/>
+</LinearLayout>

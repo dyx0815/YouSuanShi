@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.mine.activity.SettingFirstTeamActivity"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingTop="14dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置主企业"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ll_back"
+            android:background="@color/color_D5D5D5" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/v_util"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_F8F8F8"
+        android:layout_below="@id/rl_title"/>
+    <LinearLayout
+        android:id="@+id/ll_first_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_util"
+        android:gravity="center_vertical"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:text="陕西东舟软件科技有限公司"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="12dp"
+            android:text="主企业"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@color/color_F99E05"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/v_util2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_F8F8F8"
+        android:layout_below="@id/ll_first_team"/>
+    <TextView
+        android:id="@+id/tv_all_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12.5dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="10dp"
+        android:text="全部所在企业/组织/团队"
+        android:textSize="11sp"
+        android:textColor="@color/color_999999"
+        android:layout_below="@id/v_util2"/>
+    <View
+        android:id="@+id/v_util3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_F8F8F8"
+        android:layout_below="@id/tv_all_team"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_util3"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_F8F8F8"
+        android:layout_below="@id/recyclerView"/>
+</RelativeLayout>
