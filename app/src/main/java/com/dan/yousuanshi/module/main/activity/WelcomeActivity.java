@@ -56,11 +56,11 @@ public class WelcomeActivity extends BaseActivity {
                             @Override
                             public void call(Boolean aBoolean) {
                                 UserBean userBean = UserUtils.getInstance().getUserBean();
-                                if(userBean!=null&&!DataBaseHelper.tabbleIsExist(getContext(),DataBaseHelper.getOftenModelTableName(userBean.getUser_id()))){
-                                    DataBaseHelper.createOftenModelTable(getContext(),userBean.getUser_id());
+                                if (userBean != null && !DataBaseHelper.tabbleIsExist(getContext(), DataBaseHelper.getOftenModelTableName(userBean.getUser_id()))) {
+                                    DataBaseHelper.createOftenModelTable(getContext(), userBean.getUser_id());
                                 }
                                 if (UserUtils.getInstance().isLogin()) {
-                                    Log.e("Welcome",UserUtils.getInstance().getUserBean().getNick_name()+"\tisshow:"+UserUtils.getInstance().getUserBean().getIsShow());
+                                    Log.e("Welcome", UserUtils.getInstance().getUserBean().getNick_name() + "\tisshow:" + UserUtils.getInstance().getUserBean().getIsShow());
                                     if (UserUtils.getInstance().getUserBean().getIsShow() == 1) {
                                         PublicHeadersInterceptor.updateToken(SPUtils.getInstance().get("KEY_WORD_TOKEN", ""));
                                         startActivity(new Intent(getActivity(), WriteDataActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));

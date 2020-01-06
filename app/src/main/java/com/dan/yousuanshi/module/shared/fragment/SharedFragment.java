@@ -186,6 +186,9 @@ public class SharedFragment extends BaseFragment<SharedFragmentPresenter> implem
                 }
             }
         }
+        if (userBean != null && !DataBaseHelper.tabbleIsExist(getContext(), DataBaseHelper.getOftenModelTableName(userBean.getUser_id()))) {
+            DataBaseHelper.createOftenModelTable(getContext(), userBean.getUser_id());
+        }
         List<OftenModelBean> oftenModelList = DataBaseHelper.queryOftenModel(getActivity(),userBean.getUser_id());
         if(oftenModelList.size()>0){
             WorkbenchBean.ModelListBean modelListBean = new WorkbenchBean.ModelListBean("常用组件");
